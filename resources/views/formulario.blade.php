@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Tradutor</title>
+    <title>Translator</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -78,7 +78,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tradutor do Tiago</a>
+      <a class="navbar-brand" href="#">Translator</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -102,7 +102,7 @@
   <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
-            <p class="h1 mb-2 mt-2">Formulário de Tradução</p>
+            <p class="h1 mb-2 mt-2">Translator Form</p>
         </div>
     </div>
     
@@ -112,7 +112,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-12">
             <div class="mb-3">
-                <label for="linguagem_origem" class="form-label">Origem</label>
+                <label for="linguagem_origem" class="form-label">Source</label>
                 <select class="form-select"  name="linguagem_origem">
                     @if(isset($lingua_origem))
                         @foreach($vetorLinguagens as $umElemento)
@@ -127,13 +127,13 @@
             </div>
 
             <div class="mb-3">
-                <label for="texto_original" class="form-label">Texto Original</label>
+                <label for="texto_original" class="form-label">Original Text</label>
                 <textarea class="form-control" rows="10" cols="50" name="texto_original">{{$textooriginal ?? ''}}</textarea>
             </div>
         </div>
         <div class="col-md-6">
             <div class="mb-3">
-                <label for="linguagem_destino" class="form-label">Destino</label>
+                <label for="linguagem_destino" class="form-label">Target</label>
                 <select class="form-select" name="linguagem_destino">
                     @if(isset($lingua_destino))
                         @foreach($vetorLinguagens as $umElemento)
@@ -148,14 +148,14 @@
             </div>
 
             <div class="mb-3">
-                <label for="texto_traduzido" class="form-label">Texto Destino</label>
+                <label for="texto_traduzido" class="form-label">Target Text</label>
                 <textarea class="form-control" rows="10" cols="50" name="texto_traduzido">{{$textotraduzido ?? ''}}</textarea>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            <button class="btn btn-primary btn-lg" type="submit">Traduzir</button>
+            <button class="btn btn-primary btn-lg" type="submit">Translate Now</button>
         </div>
     </div>
         </form>    
