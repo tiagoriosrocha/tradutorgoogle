@@ -2,6 +2,10 @@
 
 Este tradutor faz uso do Laravel e da RapidAPI para efetivamente fazer a tradução do texto usando o Google Translator.
 
+## Visualização do funcionamento
+
+Este tradutor está funcionando no seguinte [link](https://tradutorgoogle.herokuapp.com/)
+
 ## Serviço de Tradução
 
 O serviço pode ser acessado através do seguinte link: [google-translate1](https://rapidapi.com/googlecloud/api/google-translate1).
